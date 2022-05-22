@@ -1,8 +1,3 @@
-"""
-Cobertura de teste do login no barriga react.
-"""
-
-
 
 from src.pages.login_page import LoginPage
 
@@ -23,3 +18,4 @@ def test_login_user_valid(browser):
     login_page.click_sign()
 
     # Then display title:
+    assert login_page.get_alert_text() in 'Bem vindo, testando!'
