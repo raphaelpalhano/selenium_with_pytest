@@ -27,7 +27,7 @@ def browser(config):
     driver = webdriver.Firefox()
 
   elif config['browser'] == 'Chrome':
-    b = webdriver.Chrome()
+    driver = webdriver.Chrome()
 
   elif config['browser'] == 'Headless Chrome':
     opts = webdriver.ChromeOptions()
@@ -39,6 +39,9 @@ def browser(config):
 
   # Make its calls wait for elements to appear
   driver.implicitly_wait(config['implicit_wait'])
+
+  # maxmize
+  driver.maximize_window()
 
   # Return the WebDriver instance for the setup
   yield driver

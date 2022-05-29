@@ -24,3 +24,10 @@
 }
 
 ~~~
+
+
+# Execução Paralela
+
+* Baixe o pacote: `pipenv install pytest-xdist`
+* Execute o comando: `pipenv run python -m pytest -n 2` 
+**OBS** -n é o indicar de quantidade e o número 2 é quantas thread vão executar simultaneamente

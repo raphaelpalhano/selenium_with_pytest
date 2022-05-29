@@ -3,7 +3,7 @@ Module represent login page in barriga React: input email and password and click
 in button for sign 
 """
 
-from src.locators.login_locator import LoginLocator
+from pageobject.locators.login_locator import LoginLocator
 from selenium.webdriver.common.by import By
 #from selenium.webdriver.support.ui import WebDriverWait
 
